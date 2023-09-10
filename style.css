@@ -32,16 +32,13 @@ div div form {
 }
 
 b {
+    color: #4b4b4b;
+    background: #c4c8cb;
     border-radius: 5px;
     padding: 3px;
     padding-right: 6px;
     padding-left: 6px;
     font-style: normal;
-}
-
-.b {
-    color: dimgray;
-    background: #c4c8cb;
 }
 
 .v {
