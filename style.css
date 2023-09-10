@@ -1,10 +1,8 @@
-npm i bootstrap-icons
-
-p {
+.alert {
     background-color: lightgray;
     border: 1px solid dimgray;
-padding: 5px;
-font-family: monospace;
+    padding: 5px;
+    font-family: monospace;
 }
 
 form {
@@ -12,10 +10,6 @@ form {
     padding: 5vw;
 }
 
-div {
+div div form {
     padding: 5px;
-}
-
-rs div {
-    padding: 2px, 5px, 2px,5px;
 }
