@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((json) => {
         alert("Enviado");
         console.log(json);
+        rs.innerHTML=json;
       });
   });
 });

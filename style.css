@@ -1,0 +1,15 @@
+p {
+    background-color: lightgray;
+    border: 1px solid dimgray;
+padding: 5px;
+font-family: monospace;
+}
+
+form {
+    text-align: center;
+    padding: 5vw;
+}
+
+form div {
+    padding: 5px;
+}
