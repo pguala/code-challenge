@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((json) => {
         alert("Enviado");
         console.log(json);
-        rs.innerHTML= '<p>'+ json+'</p>';
+        rs.innerHTML= '<div class="alert alert-success">Enviado!</div><br><p>'+ JSON.stringify(json)+'</p>';
       });
   });
 });
