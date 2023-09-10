@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         //alert("Enviado");
         console.log(json);
         rs.innerHTML =
-          '<div class="alert alert-success">Enviado</div><br><div class="alert alert-secondary"><b>≥</b> '+JSON.stringify(json)+'</div>';
+          '<div class="alert alert-success">Enviado</div><br><div class="alert alert-secondary"><b>Consola ≥</b> '+JSON.stringify(json)+'</div>';
       });
   });
 });

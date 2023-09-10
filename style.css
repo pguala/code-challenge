@@ -1,6 +1,7 @@
-.alert {
-    font-family: monospace;
-    padding: 0,5vw,0,5vw;
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=DM+Sans:wght@400;800&display=swap');
+
+* {
+    font-family: 'DM Sans', sans-serif;
 }
 
 form {
@@ -8,10 +9,34 @@ form {
     padding: 5vw;
 }
 
+label {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
 div div form {
     padding: 5px;
 }
 
+.alert {
+    font-family: 'Azeret Mono', monospace;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 10pt
+}
+
+.alert-secondary {
+    font-weight: bolder;
+}
+
 b {
-    color: #373737;
+    color: dimgray;
+    background: #c4c8cb;
+    border-radius: 5px;
+    padding: 3px;
+    padding-right: 6px;
+    padding-left: 6px;
+    font-style: normal;
 }
