@@ -32,8 +32,6 @@ div div form {
 }
 
 b {
-    color: dimgray;
-    background: #c4c8cb;
     border-radius: 5px;
     padding: 3px;
     padding-right: 6px;
@@ -41,7 +39,12 @@ b {
     font-style: normal;
 }
 
+.b {
+    color: dimgray;
+    background: #c4c8cb;
+}
+
 .v {
-    color: #48896c;
-    background: #b6d8c9;
+    color: #115a39;
+    background: #a2cdba;
 }
