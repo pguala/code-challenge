@@ -1,3 +1,4 @@
+let response = "";
 //Al cargar contenido DOM
 document.addEventListener("DOMContentLoaded", () => {
   //Botón
@@ -39,10 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
     })
       .then((response) => response.json())
       .then((json) => {
-        //alert("Enviado");
+        response += json;
         console.log(json);
         rs.innerHTML =
-          '<div class="alert alert-success"><b class="v">✔</b> Enviado</div><br><div class="alert alert-secondary"><b class="g">Consola ≥</b> '+JSON.stringify(json)+'</div><br><div class="alert alert-success"><b class="v">✔</b> '+JSON.stringify(json[0].id)+'</div>';
+          '<div class="alert alert-success"><b class="v">✔</b> Enviado</div><br><div class="alert alert-secondary"><b class="g">Consola ≥</b> '+JSON.stringify(json)+'</div><br><div class="alert alert-success"><b class="v">✔</b> '+JSON.stringify(json.id)+'</div>';
       });
   });
 });
