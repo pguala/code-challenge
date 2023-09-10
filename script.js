@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //Botón
   let boton = document.getElementById("submit");
   let rs = document.getElementById("rs");
+  rs.innerHTML = "";
   //En click
   boton.addEventListener("click", (evento) => {
     evento.preventDefault();
@@ -12,13 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
     let srn = document.getElementById("surname");
     let dob = document.getElementById("dob");
     let data =
-      "{nombre: " +
+      "{nombre: '" +
       nam.value +
-      ", apellido: " +
+      "', apellido: '" +
       srn.value +
-      ", nacimiento: " +
+      "', nacimiento: '" +
       dob.value +
-      ",}";
+      "'}";
+    let string = JSON.stringify(data);
 
     console.log(
       "Datos ingresados: " + nam.value + " " + srn.value + " " + dob.value
@@ -29,16 +31,18 @@ document.addEventListener("DOMContentLoaded", () => {
         "Content-type": "application/json; charset=UTF-8",
       },
       method: "POST",
-      body: JSON.stringify(data),
+      body: JSON.stringify({
+        nombre: nam.value,
+        apellido: srn.value,
+        nacimiento: dob.value
+      }),
     })
       .then((response) => response.json())
       .then((json) => {
-        alert("Enviado");
+        //alert("Enviado");
         console.log(json);
-        rs.innerHTML =+
-          '<div class="alert alert-success">Enviado!</div><br><div class="alert alert-secondary">' +
-          JSON.stringify(json) +
-          "</div>";
+        rs.innerHTML =
+          '<div class="alert alert-success">Enviado</div><br><div class="alert alert-secondary">'+JSON.stringify(json)+'</div>';
       });
   });
 });
