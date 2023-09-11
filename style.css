@@ -27,10 +27,6 @@ div div form {
     font-size: 10pt
 }
 
-.alert-secondary {
-    font-weight: bolder;
-}
-
 b {
     color: #4b4b4b;
     background: #c4c8cb;
@@ -39,6 +35,8 @@ b {
     padding-right: 6px;
     padding-left: 6px;
     font-style: normal;
+    font-weight: bolder;
+
 }
 
 .v {

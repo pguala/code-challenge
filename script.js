@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //En click
   boton.addEventListener("click", (evento) => {
     evento.preventDefault();
-
     //Valores
     let nam = document.getElementById("name");
     let srn = document.getElementById("surname");
@@ -21,12 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
       "', nacimiento: '" +
       dob.value +
       "'}";
-    let string = JSON.stringify(data);
-
     console.log(
       "Datos ingresados: " + nam.value + " " + srn.value + " " + dob.value
     );
     console.log("String generado: " + data);
+    //Fetch
     fetch("https://jsonplaceholder.typicode.com/users", {
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -38,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         nacimiento: dob.value
       }),
     })
+    //Respuesta
       .then((response) => response.json())
       .then((json) => {
         response += json;
