@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
         response += json;
         console.log(json);
         rs.innerHTML =
-          '<div class="alert alert-success"><b class="v">✔</b> Enviado</div><br><div class="alert alert-secondary"><b class="g">Consola ≥</b> '+JSON.stringify(json)+'</div><br><div class="alert alert-success"><b class="v">✔</b> '+JSON.stringify(json.id)+'</div>';
+          '<div class="alert alert-success"><b class="v">✔</b> Enviado</div><br><div class="alert alert-secondary"><b class="g">Consola ≥</b> '+JSON.stringify(json)+'</div><br><div class="alert alert-success"><b class="v">ID generado ✔</b> '+json.id+'</div>';
       });
   });
 });
